@@ -1,0 +1,275 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: "TitleText";
+	src: url("../font/TitleText.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* PC웹 */
+@media only screen and (min-width: 1224px) {
+	html, body {
+		margin: 0px;
+		padding: 0px;
+		background-color: #FFCCCC;
+	}
+	.contentBody{
+		position: relative;
+		top: 15%;
+		text-align: center;
+	}
+	.titleArea {
+		background-color: #1DE9B6;
+		margin: 0 auto;
+		width: 1200px;
+		height: 60px;
+		position: relative;
+	}
+	.webTitleArea {
+		font-family: TitleText;
+		font-size: 30px;
+		padding: 10px;
+	}
+	#imgIconTd {
+		visibility: visible;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		cursor: pointer;
+	}
+	#imgStyle {
+		width: 50px;
+		height: 50px;
+	}
+	.webContentArea {
+		width: 1200px;
+		text-align: center;
+	}
+	.tabSlideManu {
+		width: 370px;
+		height: 600px;
+		background-color: #FFF59D;
+		position: absolute;
+		right: 0;
+		top: 60px;
+		z-index: 2;
+	}
+	.tabSubManu {
+		display: grid;
+		border-bottom: #000000 solid 3px;
+		height: 50px;
+		text-align: center;
+		align-items: center;
+		cursor: pointer;
+		font-size: 15px;
+		font-weight: bolder;
+	}
+	.tabSubManu:hover {
+		background-color: #FFFFFF;
+	}
+	#tabManuImg {
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+	}
+	.imageSlide {
+		max-width: 1000px;
+		margin-left: 200px;
+		position: absolute;
+		top: 50px;
+		z-index: 1;
+	}
+	.manuTable {
+		display: none;
+	}
+	.introduceTitle {
+		font-size: 25px;
+		font-weight: bold;
+		position: relative;
+		top: 800px;
+		left: 0px;
+		z-index: 2;
+	}
+	.mainVideoArea {
+		width: 100%;
+		position: relative;
+		top: 800px;
+		z-index: 1;
+		padding-bottom: 50.00%;
+		padding-top: 10px;
+		overflow: hidden;
+	}
+	.mainVideoArea .mainVideo {
+		position: absolute;
+		left: 365px;
+		width: 50%;
+		height: 60%;
+	}
+}
+
+/* 테블릿pc */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+	html, body {
+		margin: 0px;
+		padding: 0px;
+		background-color: #FFCCCC;
+		height: 100%;
+	}
+	.wrapper {
+		height: 100%;
+		display: grid;
+		grid-template-rows: 10% 1fr 10%;
+	}
+	.homeContentsArea {
+		position: relative;
+	}
+	.webTitleArea {
+		width: 100%;
+		height: 60px;
+		background-color: #1DE9B6;
+		padding-left: 5px;
+		font-family: TitleText;
+		font-size: 30px;
+		font-weight: bold;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+	}
+	#imgIconTd {
+		visibility: hidden;
+	}
+	#imgStyle {
+		width: 50px;
+		height: 50px;
+	}
+	.contentBody{
+		position:relative;
+		text-align:center;
+		width:100%;
+		height:100%;
+		overflow:auto;
+	}
+	.webContentArea {
+		height: fit-content;
+		width: 100%;
+		text-align: center;
+	}
+	.manuTable {
+		width: 100%;
+		height: 50px;
+		background-color: #1DE9B6;
+		font-family: TitleText;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		z-index: 2;
+	}
+	.imageSlide {
+		width: 99%;
+		position: absolute;
+		top: 20px;
+		left: 4px;
+		z-index: 1;
+	}
+	.introduceTitle {
+		font-size: 25px;
+		font-weight: bold;
+		position: relative;
+		top: 700px;
+		left: 0px;
+		z-index: 1;
+	}
+	.mainVideoArea {
+		width: 97%;
+		position: relative;
+		top: 700px;
+		z-index: 1;
+		padding-bottom: 45.25%;
+		padding-top: 10px;
+		height: 0;
+		overflow: hidden;
+	}
+	.mainVideoArea .mainVideo {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* 모바일 */
+@media only screen and (max-width: 768px){
+	::-webkit-scrollbar {
+		display: none;
+	}
+	html,body {
+		margin: 0;
+		padding: 0;
+		height:100%;
+	}
+	.wrapper {
+		background-color: #FFCCCC;
+		position:relative;
+		height: 100%;
+		display: grid;
+		grid-template-rows:80%;
+	}
+	.header{
+		position:fixed;
+		height:10%;
+		top:0;
+		width:100%;
+	}
+	.titleArea{
+		height:100%;
+	}
+	.webTitleArea{
+		height:100%;
+		width:100%;		
+		background-color: #1DE9B6;
+		padding-left: 5px;
+		font-family: TitleText;
+		font-size: 30px;	
+	}
+	#imgIconTd{
+		display:none;
+	}
+	
+	.contentBody{
+		position:relative;
+		top:15%;
+		text-align:center;
+		width:100%;
+		height:100%;
+		overflow:auto;
+	}
+	
+	.footer{
+		position:fixed;
+		height:10%;
+		width:100%;
+		bottom:0;
+	}
+	.manuTable {
+		width: 100%;
+		height: 100%;
+		background-color: #1DE9B6;
+		font-family: TitleText;
+	}
+	
+	.tabSlideManu{
+		display:none;
+	}
+	
+	.introduceTitle {
+		font-size: 25px;
+		font-weight: bold;
+		z-index: 2;
+	}
+}
