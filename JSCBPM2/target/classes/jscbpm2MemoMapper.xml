@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jshoon.jscbpm2.textmemo.Jscbpm2MemoMapper">
+	<select id="getAllTextMemoList" resultType="com.jshoon.jscbpm2.textmemo.TextMemo">
+		select * from text_memo2 order by tm_no DESC
+	</select>
+	<insert id="memoWrite" parameterType="com.jshoon.jscbpm2.textmemo.TextMemo">
+		insert into text_memo2 values(text_memo2_seq.nextval, #{tm_id}, #{tm_name}, #{tm_title}, #{tm_content}, sysdate)
+	</insert>
+	<delete id="memoDelete" parameterType="com.jshoon.jscbpm2.textmemo.TextMemo">
+		delete from text_memo2 where tm_title=#{tm_title}
+	</delete>
+</mapper>

@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+body{
+	background-color: #FFFFFF;
+}
+input::placeholder {
+	color: #00E676;
+}
+textarea::placeholder {
+	color: #00E676;
+}
+
+.loginTableArea{
+	border: #000000 solid 2px;
+	width: 800px;
+}
+.siteTitleArea{
+	border: #000000 solid 2px;
+	width: 1000px;
+	height: 100px;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: cursive;
+	margin-top: 10px;
+}
+.memberTableArea{
+	border: #000000 solid 2px;
+	width: 500px;
+	height: 500px;
+	margin-left: 150px;
+	margin-top: 70px;
+}
+#textStyle{
+	color: #00796B;
+	font-weight: bolder;
+}
+#textStyle1{
+	color: #00796B;
+	font-weight: bolder;
+}
+#joinCheck_id{
+	color: #00796B;
+	font-weight: bolder;
+}
+#memberInputBox{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: #00796B solid 3px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#memberRegBtn{
+	width: 400px;
+	height: 50px;
+	border: none;
+	background-color: #00796B;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#memberRegBtn:HOVER {
+	background-color: #EA80FC;
+	color: #000000;
+}
+#memberResultComent{
+	color: red;
+	font-weight: bolder;
+}
+#moveImg{
+	width: 10px;
+		position: fixed;
+		transition: all 0.5s ease-out;
+		background: transparent;
+}
+#memberInputBox1{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: #00796B solid 3px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#memberInputBox2{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: #00796B solid 3px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#jm_id{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: #00796B solid 3px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}

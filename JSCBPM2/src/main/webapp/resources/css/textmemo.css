@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+.textmemoTable{
+	width: 550px;
+	height: 300px;
+	position: fixed;
+	right: 0px;
+	bottom: -320px;
+	z-index: 2;
+	transition: all 0.5s ease-out;
+}
+.memoTitleArea{
+	border: none;
+}
+.memoTitleSpan{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #33CCCC;
+}
+#titleInput{
+	width: 500px;
+	height: 50px;
+	border: #33CCCC solid 3px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+#titleAreaInput{
+	width: 500px;
+	height: 150px;
+	border: #33CCCC solid 3px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 900;
+}
+#memoRegBtn{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #33CCCC;
+	background-color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+}
+.memoResultTable{
+	border: #424242 solid 3px;
+	width: 600px;
+	height: auto;
+	background-color: #EEEEEE;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#memoResultIdName{
+	border: none;
+	color: #424242;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#memoResultTitle{
+	border: none;
+	color: #424242;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#memoResultDate{
+	border: none;
+	color: #424242;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#memoResultContentArea{
+	border: #424242 solid 2px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	width: 400px;
+	height: auto;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: inherit;
+	margin: 20px;
+}
+#replyInputArea{
+	border: none;
+	color: #424242;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder; 
+}
+#replyInput{
+	width: 300px;
+	border: none;
+	border-bottom: #424242 solid 2px;
+	background-color: #EEEEEE;
+}
+#replyBtn{
+	width: 100px;
+	border: none;
+	background-color: #EEEEEE;
+	font-family: monospace;
+	font-weight: bolder;
+	cursor: pointer;
+	text-align: left;
+}
+#replyResultTd{
+	border: none;
+	color: #6699FF;
+	font-family: monospace;
+	font-size: 12px;
+	font-weight: bolder;
+}
+#replyDeleteBtn{
+	border: none;
+	background-color: #EEEEEE;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: 12px;
+	color: red;
+	cursor: pointer;
+}
+#memoIcon{
+	width: 40px;
+	height: 40px;
+}

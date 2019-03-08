@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jshoon.jscbpm2.member.Jscbpm2MemberMapper">
+	<select id="getMemberById" parameterType="com.jshoon.jscbpm2.member.Member" resultType="com.jshoon.jscbpm2.member.Member">
+	select * from jscbpm2_member where jm_id=#{jm_id}
+	</select>
+	<insert id="register" parameterType="com.jshoon.jscbpm2.member.Member">
+		insert into jscbpm2_member values(#{jm_id}, #{jm_pw}, #{jm_name}, #{jm_address}, #{jm_photo})
+	</insert>
+	<update id="updateByMemberInfo" parameterType="com.jshoon.jscbpm2.member.Member">
+		update jscbpm2_member set jm_pw=#{jm_pw}, jm_name=#{jm_name}, jm_address=#{jm_address}, jm_photo=#{jm_photo} where jm_id=#{jm_id}
+	</update>
+	<delete id="deleteByMemberId" parameterType="com.jshoon.jscbpm2.member.Member">
+		delete from jscbpm2_member where jm_id=#{jm_id}
+	</delete>
+</mapper>

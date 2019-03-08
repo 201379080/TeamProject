@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+.memberInfoTable{
+	border: #000000 solid 2px;
+	width: 500px;
+	height: 500px;
+	margin-left: 150px;
+	margin-top: 70px;
+}
+#memberInputBox{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: #00796B solid 3px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#memberInfoRegBtn{
+	width: 100px;
+	height: 30px;
+	border: none;
+	background-color: #00796B;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#memberInfoRegBtn:HOVER {
+	background-color: #EA80FC;
+	color: #000000;
+}
+#memberDeleteBtn{
+	border: none;
+	background-color: #00796B;
+	color: #FFFFFF;
+	font-size: 23px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#memberDeleteBtn:HOVER{
+	background-color: #EA80FC;
+	color: #000000;
+}
+#memberResultComent{
+	color: red;
+	font-weight: bolder;
+}

@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+.loginTableArea2{
+	width: 800px;
+}
+#loginIdInput{
+	font-weight: bold;
+	border: none;
+	border-bottom: #000000 solid 2px;
+}
+#loginPwInput{
+	font-weight: bold;
+	border: none;
+	border-bottom: #000000 solid 2px;
+}
+#autologinTd{
+	color: #00796B;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#loginBtn{
+	color: #00796B;
+	background-color: #FFFFFF;
+	border: none;
+	font-weight: bolder;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+#memberBtn{
+	color: #00796B;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.loginSuccessTable{
+	width: 400px;
+	font-weight: bolder;
+}
+#logoutBtn{
+	background-color: #FFFFFF;
+	border: none;
+	color: #039BE5;
+	font-weight: bolder;
+	font-size: 16px;
+	cursor: pointer;
+}
+#memberInfoBtn{
+	text-decoration: none;
+	color: #039BE5;
+}
